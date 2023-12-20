@@ -1,5 +1,3 @@
-
-
 import json
 
 def load_responses(file_path):
