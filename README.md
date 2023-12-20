@@ -6,4 +6,4 @@ This project is under development and soon will be supported to web with multi m
 
 ## Authors
 
-* [Mantresh Kumar](https://github.com/mantreshkhurana)
+* [Mantresh Khurana](https://github.com/mantreshkhurana)
