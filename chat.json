@@ -1,5 +1,8 @@
 {
     "Hello": "Hello, how are you?",
+    "Hi": "Hi there, how are you?",
+    "I am good": "That's good to hear!",
+    "I am good, how are you?": "I'm good, thanks for asking!",
     "What is your name?": "My name is Chatbot.",
     "What's your name?": "My name is Chatbot.",
     "Who created you?": "I was created by a human.",
