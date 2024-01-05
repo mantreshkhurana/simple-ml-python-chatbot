@@ -9,6 +9,7 @@ This project is under development and soon will be supported to web with multi m
 * [Screenshots](#screenshots)
 * [Installation](#installation)
 * [Usage](#usage)
+* [Features](#features)
 * [Authors](#authors)
 
 ## Screenshots
@@ -42,6 +43,19 @@ or
 python3 train.py
 python3 app.py
 ```
+
+## Features
+
+- [x] Text support
+- [x] Custom response support
+- [ ] Image support
+- [ ] Audio support
+- [ ] Video support
+- [ ] Muliple language support
+- [ ] Markdown support
+- [ ] Speech to text support
+- [ ] Text to speech support
+- [ ] Customizable
 
 ## Authors
 
