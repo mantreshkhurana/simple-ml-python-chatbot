@@ -18,7 +18,7 @@ This project is under development and soon will be supported to web with multi m
 
 ### Demo Video
 
-https://github.com/mantreshkhurana/simple-ml-python-chatbot/assets/120998049/7ecd5ad7-891a-4f54-8919-33c44afab8e1
+https://github.com/mantreshkhurana/simple-ml-python-chatbot/assets/120998049/d8b72491-6c27-4992-8652-189b46753be4
 
 ### Screenshots
 
