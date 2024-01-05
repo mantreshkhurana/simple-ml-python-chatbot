@@ -22,7 +22,7 @@ https://github.com/mantreshkhurana/simple-ml-python-chatbot/assets/120998049/d8b
 
 ### Screenshots
 
-![Screenshot 1](./screenshots/screenshot-1.png)
+![Screenshot 1](./assets/screenshots/screenshot-1.png)
 
 ## Installation
 
