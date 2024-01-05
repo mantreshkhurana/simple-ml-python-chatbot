@@ -1,8 +1,5 @@
 from flask import Flask, request, render_template, jsonify
 import json
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.naive_bayes import MultinomialNB
-from sklearn.pipeline import make_pipeline
 from joblib import load
 
 app = Flask(__name__)
