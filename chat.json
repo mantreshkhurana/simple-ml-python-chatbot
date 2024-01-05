@@ -2,6 +2,7 @@
     "Hello": "Hello, how are you?",
     "What is your name?": "My name is Chatbot.",
     "What's your name?": "My name is Chatbot.",
+    "Who created you?": "I was created by a human.",
     "How are you?": "I'm an AI, I don't have feelings, but thank you for asking!",
     "Tell me a joke": "Why don't scientists trust atoms? Because they make up everything!"
 }
