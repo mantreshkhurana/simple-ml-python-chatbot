@@ -9,6 +9,21 @@ import requests
 import wikipedia
 import webbrowser
 from bs4 import *
+import os
+import train
+
+if os.path.exists("chat.joblib"):
+    pass
+else:
+    url = "http://mantreshkhurana.com/projects/simple-ml-python-chatbot/chat.json"
+    download_responses_data = train.download_responses(url)
+    
+    with open("chat.json", "w") as file:
+        json.dump(download_responses_data, file, indent=4)
+
+    responses_data = train.load_responses("chat.json")
+    model = train.train_model(responses_data)
+    train.save_model(model)
 
 app = Flask(__name__)
 
