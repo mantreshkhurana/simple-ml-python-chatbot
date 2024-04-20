@@ -76,7 +76,7 @@ python app.py --port 5001 --server 1 # Run the server on port 5001 and hide the 
 or
 
 ```bash
-python app.py --port 5001 --server - # Run the server on port 5001 and show the UI
+python app.py --port 5001 --server 0 # Run the server on port 5001 and show the UI
 ```
 
 ### Example Usage
