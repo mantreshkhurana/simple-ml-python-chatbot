@@ -13,7 +13,7 @@ import os
 import argparse
 
 # From local files
-import train as train
+import train
 import modules.toxicity as toxicity
 
 parser = argparse.ArgumentParser()
@@ -145,7 +145,15 @@ def get_response(question, model):
             results = YoutubeSearch(domain, max_results=1).to_dict()
             for v in results:
                 webbrowser.open(url)
-                return "Showing some results of " + domain + " on Youtube: <br><b>" + v["title"] + "</b> " + "https://www.youtube.com" + v["url_suffix"].split("&")[0]
+                return (
+                    "Showing some results of "
+                    + domain
+                    + " on Youtube: <br><b>"
+                    + v["title"]
+                    + "</b> "
+                    + "https://www.youtube.com"
+                    + v["url_suffix"].split("&")[0]
+                )
 
     elif "who is" in question:
         who_is = re.search("who is (.+)", question)
@@ -163,7 +171,7 @@ def get_response(question, model):
         locate = location.group(1)
         locate = "https://www.google.com/maps/place/" + str(locate) + "/&amp;"
         webbrowser.open(locate)
-        return "Showing <b>" + str(locate) + "<b> on Map."
+        return "Showing <b>" + str(locate) + "</b> on Map."
 
     elif "news" == question:
         news_url = "https://news.google.com/news/rss"
@@ -195,7 +203,9 @@ def chat():
     toxic = toxicity.is_toxic(question)
 
     if toxic:
-        return jsonify({"response": "It's an inappropriate question, I can't answer that."})
+        return jsonify(
+            {"response": "It's an inappropriate question, I can't answer that."}
+        )
     else:
         model = load_model()
         response = get_response(question, model)
