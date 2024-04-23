@@ -120,6 +120,17 @@ def get_response(question, model):
         for result in result[:3]:
             return result.text
 
+    elif "calculate" in question:
+        try:
+            if "calculate" in question:
+                reg_ex = re.search("calculate (.+)", question)
+
+            if reg_ex:
+                domain = reg_ex.group(1)
+                return "Answer: " + str(eval(domain))
+        except Exception as e:
+            return "Sorry, I couldn't calculate that, I am still learning."
+
     elif (
         "search youtube" in question
         or "youtube" in question
