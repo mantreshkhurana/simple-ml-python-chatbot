@@ -127,7 +127,12 @@ def get_response(question, model):
 
             if reg_ex:
                 domain = reg_ex.group(1)
-                return "Answer: " + str(eval(domain))
+                try:
+                    result = eval(domain)
+                    return f'Answer for "{domain}" is <b>{result}</b>'
+                except Exception as e:
+                    return str(e)
+
         except Exception as e:
             return "Sorry, I couldn't calculate that, I am still learning."
 
