@@ -99,6 +99,7 @@ if __name__ == "__main__":
 ## Features
 
 - [x] Text support
+- [x] TTS support
 - [x] Custom response support
 - [x] YouTube Search support
 - [x] Google Search support
