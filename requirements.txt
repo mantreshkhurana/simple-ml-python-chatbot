@@ -6,3 +6,4 @@ pandas
 numpy
 scikit-learn
 lxml
+gunicorn==20.0.4
